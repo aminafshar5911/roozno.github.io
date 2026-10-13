@@ -316,7 +316,7 @@
   const SUPABASE_URL = "https://bqzrvmnzgytjpdlxbtup.supabase.co";
   const SUPABASE_ANON_KEY = "sb_publishable_hKjX142K3-bMnD8qnRlXKw_BCzYkU3T";
   async function setupSupabase(){
-    const configured=!SUPABASE_URL.includes("YOUR_PROJECT")&&!SUPABASE_ANON_KEY.includes("YOUR_SUPABASE");
+    const configured=!SUPABASE_URL.includes("https://bqzrvmnzgytjpdlxbtup.supabase.co")&&!SUPABASE_ANON_KEY.includes("sb_publishable_hKjX142K3-bMnD8qnRlXKw_BCzYkU3T");
     $("#loginButton").addEventListener("click", loginWithGoogle);
     if(!configured||!window.supabase){
       setSyncStatus("برای همگام‌سازی، تنظیمات Supabase لازم است");
