@@ -313,8 +313,8 @@
   originalTimerStart.addEventListener("click",()=>{if(timerRunning){timerRemainingAtStart=timerRemaining;lastTimerValue=timerRemaining;}},{capture:true});
 
   // Optional Supabase sync. Set credentials in this file; OAuth redirect must be allow-listed in Supabase.
-  const SUPABASE_URL = "https://YOUR_PROJECT.supabase.co";
-  const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
+  const SUPABASE_URL = "https://bqzrvmnzgytjpdlxbtup.supabase.co/rest/v1/";
+  const SUPABASE_ANON_KEY = "sb_publishable_hKjX142K3-bMnD8qnRlXKw_BCzYkU3T";
   async function setupSupabase(){
     const configured=!SUPABASE_URL.includes("YOUR_PROJECT")&&!SUPABASE_ANON_KEY.includes("YOUR_SUPABASE");
     $("#loginButton").addEventListener("click", loginWithGoogle);
